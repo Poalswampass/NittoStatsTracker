@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NittoStatsTracker", "NittoStatsTracker.pyproj", "{2DFB643E-0BF8-4C24-B697-FDF2EDD1EB63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E713F566-F3FE-4670-9BA3-F12B15ACB8F1}"
+	ProjectSection(SolutionItems) = preProject
+		..\Nitto_Stats_Tracker.py = ..\Nitto_Stats_Tracker.py
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DFB643E-0BF8-4C24-B697-FDF2EDD1EB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFB643E-0BF8-4C24-B697-FDF2EDD1EB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D8A72D1-3152-46E0-94A8-0BD9B2CFCEF4}
+	EndGlobalSection
+EndGlobal
