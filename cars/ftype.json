@@ -1,0 +1,15 @@
+{
+    "car_name": "ftype"
+	"gear_ratios":{
+    "gear_ratio_set_1": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_2": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_3": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_4": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_5": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_6": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_7": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_8": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_9": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0],
+    "gear_ratio_set_10": ["gear1": 0, "gear2": 0, "gear3": 0, "gear4": 0, "gear5": 0, "gear6": 0, "final": 0]
+	}
+}
