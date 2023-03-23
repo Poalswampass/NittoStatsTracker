@@ -11,25 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\..\..\NittoStatTracker\add_stats.py = ..\..\..\NittoStatTracker\add_stats.py
 		..\..\..\NittoStatTracker\calculate_averages.py = ..\..\..\NittoStatTracker\calculate_averages.py
 		..\..\..\NittoStatTracker\clear_stats.py = ..\..\..\NittoStatTracker\clear_stats.py
-		cars\ftype.json = cars\ftype.json
-		cars\funnycar.json = cars\funnycar.json
-		cars\lancer.json = cars\lancer.json
+		config.py = config.py
 		main_window.py = main_window.py
-		cars\mopar.json = cars\mopar.json
-		cars\nsx.json = cars\nsx.json
-		cars\ram.json = cars\ram.json
-		cars\rsx.json = cars\rsx.json
-		cars\rx8.json = cars\rx8.json
 		..\..\..\NittoStatTracker\save_ratios.py = ..\..\..\NittoStatTracker\save_ratios.py
 		..\..\..\NittoStatTracker\show_stats.py = ..\..\..\NittoStatTracker\show_stats.py
-		cars\skyline.json = cars\skyline.json
-		cars\srt4.json = cars\srt4.json
-		cars\subaru.json = cars\subaru.json
-		cars\supra.json = cars\supra.json
-		cars\tfd.json = cars\tfd.json
 		..\..\..\NittoStatTracker\update_ratios.py = ..\..\..\NittoStatTracker\update_ratios.py
 		..\..\..\NittoStatTracker\validate_inputs.py = ..\..\..\NittoStatTracker\validate_inputs.py
-		cars\viper.json = cars\viper.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cars", "cars", "{5C430DA7-28D1-4E2C-A66E-A77EFF6F2B19}"

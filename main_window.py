@@ -1,8 +1,8 @@
 from validate_inputs import validate_ratio_input, validate_final_input, validate_expected_et_input
+import tkinter as tk
 from add_stats import add_stats
 from clear_stats import clear_stats
 from save_ratios import save_ratios
-import tkinter as tk
 import os
 from add_ratios import gear_ratios
 
@@ -93,7 +93,6 @@ gear_menu.pack()
 
 CURRENT_DIR = os.getcwd()
 file_path = f'{selected_car}.json'
-selected_car = car_dropdown.get()
 
 gear_ratios = {}
 
