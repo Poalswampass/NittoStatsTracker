@@ -1,7 +1,9 @@
 from final_validation import validate_final
-from expected_et import expected_et_entry
+from expected_et import validate_et_entry
 import tkinter as tk
-from gui import add_stats, clear_stats, save_ratios
+from add_stats import add_stats
+from clear_stats import clear_stats
+from save_ratios import save_ratios
 from menu import gear_menu, gear_menu_var, gear_options, root
 from dict import gear_ratios
 
@@ -85,9 +87,9 @@ gear_ratios['final_drive'] = final_entry
 # Add input field for the expected ET and save the entry to the ratios dictionary.
 expected_et_label = tk.Label(root, text='Expected ET:')
 expected_et_label.pack()
-expected_et_entry = tk.Entry(root, validate='key', validatecommand=(expected_et_entry, '%P'))
+expected_et_entry = tk.Entry(root, validate='key', validatecommand=(validate_et_entry, '%P'))
 expected_et_entry.pack()
-gear_ratios['expected_et'] = expected_et_entry
+gear_ratios['expected_et'] = validate_et_entry
 
 
 add_ratio_button = tk.Button(root, text='Add Ratios', command=lambda: save_ratios(gear_ratios))
