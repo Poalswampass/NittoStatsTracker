@@ -13,13 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\..\..\NittoStatTracker\clear_stats.py = ..\..\..\NittoStatTracker\clear_stats.py
 		config.py = config.py
 		gui.py = gui.py
+		..\..\..\NittoStatTracker\et_validation.py = ..\..\..\NittoStatTracker\et_validation.py
+		final_validation.py = final_validation.py
 		init.py = init.py
 		..\..\..\NittoStatTracker\save_ratios.py = ..\..\..\NittoStatTracker\save_ratios.py
+		ratio_validation.py = ratio_validation.py
 		..\..\..\NittoStatTracker\show_stats.py = ..\..\..\NittoStatTracker\show_stats.py
 		..\..\..\NittoStatTracker\update_ratios.py = ..\..\..\NittoStatTracker\update_ratios.py
-		..\..\..\NittoStatTracker\validate_et.py = ..\..\..\NittoStatTracker\validate_et.py
-		validate_final.py = validate_final.py
-		validate_ratio.py = validate_ratio.py
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cars", "cars", "{5C430DA7-28D1-4E2C-A66E-A77EFF6F2B19}"

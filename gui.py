@@ -111,3 +111,6 @@ save_button.pack()
 
 clear_button = tk.Button(root, text='Clear Stats', command=clear_stats)
 clear_button.pack()
+
+# Start the main loop of the gui
+root.mainloop()

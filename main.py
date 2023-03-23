@@ -1,4 +1,3 @@
-from multiprocessing import Value
 from gui import car_dropdown, root, gear_menu_var
 from update_ratios import update_ratios
 from add_stats import add_stats
@@ -9,6 +8,7 @@ from show_stats import show_stats
 import validate_ratio
 import validate_final
 import validate_et
+import init
 
 def main():
     # Initialize variables
@@ -33,7 +33,4 @@ def main():
     validate_et()
     
 if __name__ == '__main__':
-    main()
-
-# Start the main loop of the gui
-root.mainloop()
+    init.setup()

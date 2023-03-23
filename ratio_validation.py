@@ -1,5 +1,5 @@
 # Ensure input values are correct.
-def validate_ratio_input(value):
+def validate_ratio(value):
     try:
         value = float(value)
     except ValueError:

@@ -1,18 +1,17 @@
-from .add_ratios import *
-from .add_stats import *
-from .calculate_averages import *
-from .clear_stats import *
-from .config import *
-from .gui import *
-from .save_ratios import *
-from .show_stats import *
-from .update_ratios import *
-from .validate_ratio import *
-from .validate_final import *
-from .validate_et import *
+from add_ratios import *
+from add_stats import *
+from calculate_averages import *
+from clear_stats import *
+from config import *
+from gui import *
+from save_ratios import *
+from show_stats import *
+from update_ratios import *
+from validate_ratio import *
+from validate_final import *
+from et_validate import *
 import os
 import json
-
 
 __all__ = [
     'add_ratios',
@@ -26,7 +25,7 @@ __all__ = [
     'update_ratios',
     'validate_ratio',
     'validate_final',
-    'validate_et'
+    'et_validate'
 ]
 
 car_name = {}
