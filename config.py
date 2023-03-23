@@ -1,1 +1,1 @@
-cars = '/cars'
+car_folder = '/cars'
