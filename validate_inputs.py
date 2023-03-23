@@ -1,3 +1,7 @@
+import tkinter as tk
+from add_ratios import gear_ratios
+from main_window import root
+
 # Ensure input values are correct.
 def validate_ratio_input(input_value):
     try:
@@ -5,7 +9,6 @@ def validate_ratio_input(input_value):
     except ValueError:
         return False
     return value >= 0.5 and value <= 8.0
-    return True
 
 # Ensure input is correct for final drive.
 def validate_final_input(input_value):
@@ -13,8 +16,12 @@ def validate_final_input(input_value):
         value = float(input_value)
     except ValueError:
         return False
+        final_label = tk.Label(root, text='Final Drive Ratio:')
+    final_label.pack()
+    final_entry = tk.Entry(root, validate='key', validatecommand=(validate_final_input, '%P'))
+    final_entry.pack()
+    gear_ratios['final_drive'] = final_entry
     return value >= 2.000 and value <= 8.000
-    return True
 
 # Add input field for the final drive and save the entry to the ratios dictionary.
 final_label = tk.Label(root, text='Final Drive Ratio:')
