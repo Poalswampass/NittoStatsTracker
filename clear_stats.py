@@ -1,3 +1,7 @@
+import json
+from init import messagebox, calculate_averages
+from gui import avg_rt_output, avg_et_output, avg_mph_output
+
 def clear_stats():
     global TOTAL_RT, TOTAL_ET, TOTAL_MPH, MATCHES_PLAYED, json_data, selected_car
     file_path = f'{selected_car}.json'

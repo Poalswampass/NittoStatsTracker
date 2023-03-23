@@ -1,3 +1,7 @@
+from calculate_averages import calculate_averages
+import tkinter as messagebox
+from gui import avg_rt_output, avg_et_output, avg_mph_output
+
 def show_stats():
     global TOTAL_RT, TOTAL_ET, TOTAL_MPH, MATCHES_PLAYED
     if MATCHES_PLAYED > 0:

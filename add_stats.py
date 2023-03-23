@@ -1,15 +1,22 @@
+import os
+import tkinter as messagebox
+from calculate_averages import calculate_averages
+from init import car_folder
+from gui import rt_entry, et_entry, mph_entry
+from menu import gear_menu_var
+
 def add_stats(gear_entries):
-    global json_data, car_dropdown, TOTAL_RT, TOTAL_ET, TOTAL_MPH, MATCHES_PLAYED, gear_ratios, selected_car
-    selected_car = car_dropdown.get()
-    
-    try:
-        if os.path.exists(file_path):
-            with open(file_path, 'r') as f:
-                json.load(f)
-        else:
-            print(f"{file_path} does not exist.")
-    except:
-        print(error)
+    global selected_car, gear_menu_var
+    # Check if a car has been selected
+    if not selected_car:
+        messagebox.showerror('Error', 'No car selected')
+        return
+
+    # Check if the selected car exists
+    os.path.join(car_folder, f'{selected_car}.json')
+    if not os.path.exists(car_folder):
+        messagebox.showerror('Error', f'{selected_car} does not exist')
+        return
 
     # Get the values from the entry boxes
     rt = rt_entry.get()
@@ -23,17 +30,17 @@ def add_stats(gear_entries):
         mph = float(mph)
     except ValueError:
         messagebox.showerror('Error', 'Invalid input')
-        return False
+        return
 
     # Check that rt is between 0 and 1
     if rt < 0 or rt > 1:
         messagebox.showerror('Error', 'Invalid input for RT')
-        return False
+        return
 
     # Check that et and mph are positive
     if et < 0 or mph < 0:
         messagebox.showerror('Error', 'Invalid input for ET or MPH')
-        return False
+        return
 
     # Check if the race was fouled (rt < 0.500)
     if rt >= 0.500:
@@ -44,16 +51,16 @@ def add_stats(gear_entries):
         messagebox.showinfo('Fouled Race', 'The race was fouled')
 
     # Get the selected gear ratio set
-    gear_menu_var.get()
+    selected_gear = gear_menu_var.get()
 
     # Add the stats to the car_data dictionary under the selected gear
-    json_data[gear_ratios].append({
+    gear_entries[selected_gear].append({
         'rt': rt,
         'et': et,
         'mph': mph
     })
 
-    # Update the total stats and matches played
+    # Update the total stats
     TOTAL_ET += et
     TOTAL_RT += rt
     TOTAL_MPH += mph

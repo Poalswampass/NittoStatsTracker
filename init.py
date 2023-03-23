@@ -6,11 +6,9 @@ from config import *
 from gui import *
 from save_ratios import *
 from show_stats import *
-from save_stats import *
 from update_ratios import *
-from validate_ratio import *
-from validate_final import *
-from et_validate import *
+from ratio_validation import *
+from expected_et import *
 import os
 import json
 
@@ -23,10 +21,8 @@ __all__ = [
     'car_name',
     'save_ratios',
     'show_stats',
-    'save_stats',
     'update_ratios',
     'validate_ratio',
-    'validate_final',
     'et_validate'
 ]
 

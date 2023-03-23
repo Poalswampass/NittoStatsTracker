@@ -1,9 +1,13 @@
+from dict import gear_ratios
+import json
+from config import car_folder
+
 # Function to calculate and display the average stats
 def calculate_averages():
-    global json_data, car_dropdown, avg_rt_output, avg_et_output, avg_mph_output, selected_car
-    with open(file_path) as f:
+    global car_dropdown, avg_rt_output, avg_et_output, avg_mph_output, selected_car
+    with open(car_folder, f'{selected_car}.json') as f:
         json_data = json.load(f)
-    stats = json_data['stats']
+    stats = selected_car[gear_ratios]['stats']
 
     total_rt = sum([s['rt'] for s in stats if s['rt'] >= 0.5])
     total_et = sum([s['et'] for s in stats])

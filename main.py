@@ -1,13 +1,8 @@
-from gui import car_dropdown, root, gear_menu_var
 from update_ratios import update_ratios
 from add_stats import add_stats
 from calculate_averages import calculate_averages
-from clear_stats import clear_stats
-from save_ratios import save_ratios
 from show_stats import show_stats
-import validate_ratio
-import validate_final
-import validate_et
+from init import car_dropdown
 import init
 
 def main():
@@ -23,14 +18,10 @@ def main():
 
     # Add new race data to the stats and update averages
     add_stats(race_data)
-    calculate_averages(averages, race_data)
+    calculate_averages(averages)
     
     # Show current stats and ratios
     show_stats()
-    gear_menu_var.get()
-    validate_ratio()
-    validate_final()
-    validate_et()
     
 if __name__ == '__main__':
     init.setup()
