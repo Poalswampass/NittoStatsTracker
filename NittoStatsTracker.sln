@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NittoStatsTracker", "NittoStatsTracker.pyproj", "{2DFB643E-0BF8-4C24-B697-FDF2EDD1EB63}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "main", "main.pyproj", "{2DFB643E-0BF8-4C24-B697-FDF2EDD1EB63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E713F566-F3FE-4670-9BA3-F12B15ACB8F1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\NittoStatTracker\add_ratios.py = ..\..\..\NittoStatTracker\add_ratios.py
+		..\..\..\NittoStatTracker\add_stats.py = ..\..\..\NittoStatTracker\add_stats.py
+		..\..\..\NittoStatTracker\calculate_averages.py = ..\..\..\NittoStatTracker\calculate_averages.py
+		..\..\..\NittoStatTracker\clear_stats.py = ..\..\..\NittoStatTracker\clear_stats.py
+		cars\ftype.json = cars\ftype.json
+		cars\funnycar.json = cars\funnycar.json
+		cars\lancer.json = cars\lancer.json
+		cars\mopar.json = cars\mopar.json
+		cars\nsx.json = cars\nsx.json
+		cars\ram.json = cars\ram.json
+		cars\rsx.json = cars\rsx.json
+		cars\rx8.json = cars\rx8.json
+		..\..\..\NittoStatTracker\save_ratios.py = ..\..\..\NittoStatTracker\save_ratios.py
+		..\..\..\NittoStatTracker\show_stats.py = ..\..\..\NittoStatTracker\show_stats.py
+		cars\skyline.json = cars\skyline.json
+		cars\srt4.json = cars\srt4.json
+		cars\subaru.json = cars\subaru.json
+		cars\supra.json = cars\supra.json
+		cars\tfd.json = cars\tfd.json
+		..\..\..\NittoStatTracker\update_ratios.py = ..\..\..\NittoStatTracker\update_ratios.py
+		..\..\..\NittoStatTracker\validate_inputs.py = ..\..\..\NittoStatTracker\validate_inputs.py
+		cars\viper.json = cars\viper.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cars", "cars", "{5C430DA7-28D1-4E2C-A66E-A77EFF6F2B19}"
 	ProjectSection(SolutionItems) = preProject
 		cars\challenger.json = cars\challenger.json
 		cars\charger.json = cars\charger.json
@@ -13,7 +39,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		cars\funnycar.json = cars\funnycar.json
 		cars\lancer.json = cars\lancer.json
 		cars\mopar.json = cars\mopar.json
-		..\Nitto_Stats_Tracker.py = ..\Nitto_Stats_Tracker.py
 		cars\nsx.json = cars\nsx.json
 		cars\ram.json = cars\ram.json
 		cars\rsx.json = cars\rsx.json
@@ -37,6 +62,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C430DA7-28D1-4E2C-A66E-A77EFF6F2B19} = {E713F566-F3FE-4670-9BA3-F12B15ACB8F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D8A72D1-3152-46E0-94A8-0BD9B2CFCEF4}
