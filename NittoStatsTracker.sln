@@ -18,6 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		init.py = init.py
 		..\..\..\NittoStatTracker\save_ratios.py = ..\..\..\NittoStatTracker\save_ratios.py
 		ratio_validation.py = ratio_validation.py
+		save_stats.py = save_stats.py
 		..\..\..\NittoStatTracker\show_stats.py = ..\..\..\NittoStatTracker\show_stats.py
 		..\..\..\NittoStatTracker\update_ratios.py = ..\..\..\NittoStatTracker\update_ratios.py
 	EndProjectSection

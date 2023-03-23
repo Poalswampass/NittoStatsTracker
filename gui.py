@@ -1,11 +1,9 @@
-from validate_final import validate_final
-from validate_et import validate_et
+from final_validation import validate_final
+from et_validation import validate_et
 import tkinter as tk
 from add_stats import add_stats
 from clear_stats import clear_stats
 from save_ratios import save_ratios
-import os
-from config import car_folder
 
 gear_ratios = {}
 
